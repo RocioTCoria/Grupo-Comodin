@@ -1,5 +1,5 @@
-const apiKey = '$2a$10$vIxT1sCztnXeaCg7yC2ZjOleKtiAOUmgaSEk5V0hBHP8FsG2ObfSy';
-const binId = '66e8edd2acd3cb34a885cd0f';
+const apiKey = '$2a$10$RTa3qo.3s8tJ//sbqZB0cu1khDNu4EZKyFimQmifkc5qaqz6HWwsC';
+const binId = '66ea16cde41b4d34e4323248';
 
 // Cargar tareas cuando se abre la página
 window.onload = function() {
@@ -54,7 +54,7 @@ async function addTask() {
         formData.append('image', taskImage);
 
         const imgurResponse = await axios.post('https://api.imgur.com/3/image', formData, {
-            headers: { Authorization: 'Client-ID d4ee1135138cb58' }
+            headers: { Authorization: 'Client-ID a9bb7a64e94141b' }
         });
 
         const imageUrl = imgurResponse.data.data.link;
